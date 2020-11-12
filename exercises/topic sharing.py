@@ -1,6 +1,7 @@
 a=[1,2,3,4]
-for i in a:
-    pass
+b=["x","y","z","u"]
+list=a+b
+print(list)
 
 
 
