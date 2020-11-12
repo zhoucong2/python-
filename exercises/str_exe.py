@@ -7,3 +7,4 @@ letters2=",".join(letters1)#join（）函数：列表以“，”为合并符，
 print(letters2)
 letters3=letters.replace("def ghi","123")#replace()函数：对字符串进行简单的子替换
 print(letters3)
+
