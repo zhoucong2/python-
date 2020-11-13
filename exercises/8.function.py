@@ -25,3 +25,12 @@ def commentary(color):
         return "I've never heard of the color " + color +"."
 print(commentary("Blue"))
 
+"""函数调用时的位置参数，关键字参数:位置参数指的是函数调用时传入参数的值是按照顺序依次复制过去的 
+                                     关键字参数指的是为避免位置参数带来的混乱， 调用函数时可以指
+                                     定对应参数的名字，当位置参数与关键字参数同时出现时，首先应该
+                                    考虑的是位置参数"""
+def menu(a,b,c):
+    print({a:"A",b:"B",c:"C"})
+menu(1,2,3)#仅有位置参数
+menu(b=1,c=2,a=3)#仅有关键字参数
+menu(1,c=2,b=3)#位置参数、关键字参数同时存在
