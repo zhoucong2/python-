@@ -34,3 +34,19 @@ def menu(a,b,c):
 menu(1,2,3)#仅有位置参数
 menu(b=1,c=2,a=3)#仅有关键字参数
 menu(1,c=2,b=3)#位置参数、关键字参数同时存在
+
+
+"""使用*，**收集关键字参数"""
+def arg(*a):
+    print("hello world",a)
+arg(1,2,3,4,5,6)# *可以将一组可变数量的位置参数集合成参数值的元组
+
+def arg_more(a,b,*c): #当函数同时有限定的位置参数的时候，*会收集剩下的参数
+    print("hello world",a)
+    print("hello world again",b)
+    print("hello world third",c)
+arg_more(1,2,3,4,5,6,7)
+
+def kwargs(**x): # **可以将参数收集到一个字典中，参数的名字就是字典的键，对应
+    print("hello world:",x)              #参数的值就是字典的值，x在函数内部是一个字典
+kwargs(a = "A",b = "B",c="C")
