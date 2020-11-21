@@ -50,3 +50,14 @@ arg_more(1,2,3,4,5,6,7)
 def kwargs(**x): # **可以将参数收集到一个字典中，参数的名字就是字典的键，对应
     print("hello world:",x)              #参数的值就是字典的值，x在函数内部是一个字典
 kwargs(a = "A",b = "B",c="C")
+
+def knights(saying): #内部函数，作用是给外部的函数增加字符串参数
+    def inner(quote):
+        return "we are the knights who say:'%s'" % quote
+    return inner(saying)
+print(knights("Ni!"))
+
+def knight(saying):
+    def inner2():
+        return "we are the knights who say 's%'"%saying
+    return inner2
