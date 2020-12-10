@@ -12,4 +12,3 @@ list1 = ["kevin" , "eric" , "lucy"]
 list2 = [90, 80, 100]
 r = zip(list1, list2)
 print(list(r)) #元组列表
-
