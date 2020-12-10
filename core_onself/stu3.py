@@ -1,0 +1,1 @@
+min1 = lambda  list2 : min(list2)

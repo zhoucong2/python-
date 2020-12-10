@@ -1,0 +1,1 @@
+max1 = lambda  list1 : max(list1)

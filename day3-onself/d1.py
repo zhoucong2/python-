@@ -19,6 +19,3 @@ def test2(x,*,y,z,**args):
     print(x,y,z,args)
 test2(1,y=2,z=3 ,age=19)
 
-
-def outer(x):
-    x=
